@@ -30,7 +30,7 @@ class ImportData extends Command
 
     private function importPharmacies()
     {
-        $filePath = storage_path('app/data/pharmacies.json');
+        $filePath = storage_path('app/pharmacies.json');
         $this->info("File path: $filePath");
 
         if (! file_exists($filePath)) {
@@ -73,7 +73,7 @@ class ImportData extends Command
 
     private function importUsers()
     {
-        $filePath = storage_path('app/data/users.json');
+        $filePath = storage_path('app/users.json');
         $this->info("File path: $filePath");
 
         if (! file_exists($filePath)) {
